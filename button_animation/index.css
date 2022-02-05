@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+.flex-row-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-items-center{
+    flex-basis: 25%;
+    height: 33.3vh;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .flex-items-center {
+        flex-basis: 100%;
+    }
+  }
+.btn{
+    width: 40%;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: all 1s;
+}
+
+.btn:hover{
+    box-shadow: 0 15px 33px rgb(0 0 0 / 20%);
+}
+

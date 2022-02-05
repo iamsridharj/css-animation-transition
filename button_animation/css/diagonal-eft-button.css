@@ -1,0 +1,33 @@
+.diagonal-btn-container{
+    background: #736372  ;
+}
+
+.diagonal-eft-btn{
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 10;
+    overflow: hidden;
+    transition: all 500ms;
+}
+
+.diagonal-eft-btn:hover{
+    color: white;
+}
+
+.diagonal-eft-btn:after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: -100%;
+    left: -10%;
+    transform-origin: center;
+    background: #aac0aa;
+    z-index: -1;
+    transform: rotate(45deg) rotateY(90deg);
+    transition: all 500ms;
+}
+
+.diagonal-eft-btn:hover:after{
+    transform: rotate(45deg) rotateY(0deg)
+}

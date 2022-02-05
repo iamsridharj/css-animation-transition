@@ -1,0 +1,34 @@
+.text-scaling-btn-container{
+    background-color: #985277;
+}
+
+.text-scaling-eft-btn{
+    color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition:all 500ms ;
+}
+
+.text-scaling-eft-btn:before{
+    content: 'Hurrey!!';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ef946c;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.text-scaling-eft-btn:hover:before{
+    transform: scale(1);
+    opacity: 1;
+}

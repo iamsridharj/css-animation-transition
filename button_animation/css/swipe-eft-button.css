@@ -1,0 +1,33 @@
+.swipe-eft-btn-container{
+    background: #81b29a;
+}
+
+.swipe-eft-btn{
+    color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition:all 500ms ;
+}
+
+.swipe-eft-btn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    background-color: #d4a373;
+    transform: translateX(-110%);
+    transition: all 500ms;
+    z-index: -1;
+}
+
+.swipe-eft-btn:hover{
+    color: white;
+}
+
+.swipe-eft-btn:hover:before{
+    transform: translateX(0);
+}

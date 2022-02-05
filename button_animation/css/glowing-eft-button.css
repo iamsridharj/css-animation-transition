@@ -1,0 +1,31 @@
+.glowing-btn-container{
+    background-color: #555b6e;
+}
+
+.glowing-eft-btn{
+    color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition:500ms ease-in ;
+}
+
+.glowing-eft-btn:hover{
+    background-color: #fad2e1;
+}
+
+.glowing-eft-btn:before{
+    content: "";
+    background: white; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 500ms;
+}
+
+.glowing-eft-btn:hover:before{
+    transform: translateX(100%) rotate(45deg);
+}

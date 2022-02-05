@@ -1,0 +1,54 @@
+.three-circle-btn-container{
+    background-color: #fcf6bd;
+}
+
+.three-circle-eft-btn{
+    border:none;
+    box-shadow: none;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.three-circle-eft-btn:hover{
+    box-shadow: none;
+    color: black;
+}
+
+.three-circle-eft-btn:after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    background-color: #20a39e;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    transform-origin: top;
+    transition: all 500ms;
+}
+
+.three-circle-eft-btn::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: #ef5b5b;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    transform-origin: bottom;
+    transition: all 500ms;
+}
+
+.three-circle-eft-btn:hover:after{
+    transform: perspective(1000px) rotateX(80deg);
+}
+
+.three-circle-eft-btn:hover:before{
+    transform: perspective(1000px) rotateX(80deg);
+}

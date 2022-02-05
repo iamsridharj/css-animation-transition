@@ -1,0 +1,51 @@
+.border-switching-btn-container{
+    background: #eddcd2;
+}
+
+.border-switching-btn{
+    border: none;
+    background: transparent;
+    color: white;
+    box-shadow: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    position: relative;
+    transition: all 500ms;
+    color:black
+}
+
+.border-switching-btn:hover{
+    box-shadow: none;
+}
+
+.border-switching-btn:before{
+    content: "";
+    position: absolute;
+    top:-25%;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    border-left: 2px solid #5b8e7d;
+    border-right: 2px solid #cc87a0;
+    transition: all 500ms;
+}
+
+.border-switching-btn:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -10%;
+    height: 100%;
+    width: 120%;
+    border-top: 2px solid #5b8e7d;
+    border-bottom: 2px solid #cc87a0        ;
+    transition: all 500ms;
+}
+
+.border-switching-btn:hover:before{
+    transform: rotateY(180deg);
+}
+
+.border-switching-btn:hover:after{
+    transform: rotateX(180deg);
+}

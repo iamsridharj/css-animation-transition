@@ -1,0 +1,51 @@
+.splitted-btn-container{
+    background-color: #461220;    
+}
+
+.splitted-eft-btn{
+    background: transparent;
+    box-shadow: none;
+    color: #cdb4db;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 2px solid #cdb4db;
+    position: relative;
+    z-index: 10;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+.splitted-eft-btn:hover{
+    color: black;
+}
+
+.splitted-eft-btn:before, 
+.splitted-eft-btn:after
+{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #cdb4db;
+    z-index: -1;
+    transition: all 500ms;
+}
+
+.splitted-eft-btn:before{
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.splitted-eft-btn:hover::before{
+    transform: translateX(0);
+}
+.splitted-eft-btn:after{
+    top: 0;
+    left: 50%;
+    transform: translateY(-100%);
+}
+
+.splitted-eft-btn:hover:after{
+    transform: translateY(0);
+}

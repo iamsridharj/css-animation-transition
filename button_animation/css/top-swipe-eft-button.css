@@ -1,0 +1,31 @@
+.top-swipe-eft-btn-container{
+    background: #ffb5a7;
+}
+
+.top-swipe-eft-btn{
+    transition: all 500ms;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.top-swipe-eft-btn:before{
+    content: 'Hurrey!!';
+    position: absolute;
+    transform-origin: top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    background-color: #2b2d42;
+    transition: all 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.top-swipe-eft-btn:hover:before{
+    transform: translateY(0);
+}

@@ -1,0 +1,55 @@
+.skew-btn-container{
+    background: #77bfa3;
+}
+
+.skew-eft-btn{
+    background: transparent;
+    box-shadow: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    font-weight: 550;
+    color:white;
+}
+
+.skew-eft-btn:hover{
+    box-shadow: none;
+}
+
+.skew-eft-btn:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #ad2831;
+    z-index: -1;
+    transform: skewX(30deg);
+    transition: all 500ms;
+}
+
+.skew-eft-btn:hover:before{
+    top:0;
+    left: 50%;
+    transform: skewX(0);
+}
+
+.skew-eft-btn:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 50%;
+    height: 100%;
+    background: #16697a;
+    z-index: -1;
+    transform: skewX(30deg);
+    transition: all 500ms;
+}
+.skew-eft-btn:hover:after{
+    top:0;
+    left: 0%;
+    transform: skewX(0);
+}
